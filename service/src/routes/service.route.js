@@ -9,7 +9,7 @@ serviceRouter.post('/', async (req, res) => {
   res.send();
 });
 
-serviceRouter.post('/sayHello', async (req, res) => {
+serviceRouter.get('/sayHello', async (req, res) => {
   logger.info('Hello from Mindcurv');
   res.status(200);
   res.send('<p>Hello from Mindcurv.</p>');
